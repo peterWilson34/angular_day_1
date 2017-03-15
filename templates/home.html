@@ -1,0 +1,8 @@
+<div >
+  <h1>{{myName}}</h1>
+  <input type="text" ng-model="myName">
+  <ul>
+    <li ng-repeat="item in items" ng-if="item.intake>35">{{item.name}}, {{item.intake}}</li>
+  </ul>
+
+</div>

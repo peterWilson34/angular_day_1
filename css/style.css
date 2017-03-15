@@ -1,0 +1,24 @@
+body{
+  margin: 0;
+}
+header{
+  background-color: #eee;
+  border-bottom: 1px solid #333;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+h1{
+  color: #333;
+  text-align: center;
+}
+[ng-view]{
+  padding: 0 50px;
+}
+ul{
+  padding: 0;
+  list-style: none;
+}
+li{
+  display: inline-block;
+  margin-right: 20px;
+}
