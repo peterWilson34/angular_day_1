@@ -1,0 +1,21 @@
+  <input type="text" ng-model="x">
+  <p>{{mydata }}</p>
+  <p>{{mydata | date : 'EEEE,d MMM yy'}}</p>
+ <table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Image</th>
+      <th>Price</th>
+      <th>Rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="product in products | limitTo:2">
+      <td>{{product.name}}</td>
+      <td><img src="{{product.images}}" alt=""></td>
+      <td>{{product.price | currency : 'LE'}}</td>
+      <td><div star-rating class="myRating" ng-model='product.rate'></div></td>
+    </tr>
+  </tbody>
+</table>

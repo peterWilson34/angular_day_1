@@ -1,0 +1,15 @@
+<h1>Welcome, {{user.name}}</h1>
+<table>
+  <tr>
+    <td>Name</td>
+    <td>{{user.name}}</td>
+  </tr>
+  <tr ng-if="user.mobile">
+    <td>Mobile</td>
+    <td>{{user.mobile}}</td>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td>{{user.email}}</td>
+  </tr>
+</table>

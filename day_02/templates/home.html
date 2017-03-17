@@ -1,0 +1,19 @@
+<h1>Home</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Image</th>
+      <th>Description</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="product in prodcuts" style="background-color:{{product.color}}">
+      <td>{{product.name}}</td>
+      <td><img src="{{product.images}}" alt=""></td>
+      <td><p>{{product.description}}</p></td>
+      <td>{{product.price | currency}}</td>
+    </tr>
+  </tbody>
+</table>

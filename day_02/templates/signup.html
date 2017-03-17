@@ -1,0 +1,14 @@
+<h1>Signup</h1>
+<form novalidate name="signupForm"  ng-submit="submitted=true;signup(signupForm.$valid)">
+  <input type="text" name="name" required placeholder="name" ng-model="user.name">
+  <p ng-if="signupForm.name.$error.required && submitted">Please Enter your Name</p>
+  <input type="email" name="email" required placeholder="email" ng-model="user.email">
+  <p ng-if="signupForm.email.$error.required && submitted">Please Enter your Email</p>
+  <p ng-if="signupForm.email.$error.email && submitted">Please Enter valid Email</p>
+
+  <input type="text" placeholder="mobile" ng-model="user.mobile">
+  <input type="password" required name="password" placeholder="password" ng-model="user.password">
+  <p ng-if="signupForm.password.$error.required && submitted">Please Enter your password</p>
+
+  <button  name="button"  >Signup</button>
+</form>

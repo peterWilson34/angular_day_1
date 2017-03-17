@@ -1,0 +1,9 @@
+<form novalidate name="loginForm" ng-submit='submitted=true;login(loginForm.$valid)'>
+  <input type="email" required ng-model="userLogin.email" name="email">
+  <p ng-if="loginForm.email.$error.required && submitted">Please Enter your email</p>
+  <p ng-if="loginForm.email.$error.email && submitted">Please Enter valid email</p>
+  <input type="password" required name="password" ng-model="userLogin.password">
+  <p ng-if="loginForm.password.$error.required && submitted">Please Enter Your Password</p>
+  <button>Login</button>
+  <p ng-if="loginError">Your email or password is not correct!</p>
+</form>

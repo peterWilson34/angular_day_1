@@ -1,0 +1,18 @@
+angular.module('MyApp').config(function($routeProvider){
+  $routeProvider
+  .when('/',{
+    templateUrl:'templates/home.html',
+    controller:'home'
+  })
+  .when('/signup',{
+    templateUrl:'templates/signup.html',
+    controller:'signup'
+  })
+  .when('/login',{
+    templateUrl:'templates/login.html',
+    controller:'login'
+  })
+  .when('/profile',{
+    templateUrl:'templates/profile.html'
+  })
+})

@@ -1,0 +1,10 @@
+angular.module('MyApp').config(function($routeProvider){
+  $routeProvider
+  .when('/',{
+    templateUrl:'templates/home.html',
+    controller:'home'
+  })
+  .when('/about',{
+    template:'<h1>test</h1>'
+  })
+})
